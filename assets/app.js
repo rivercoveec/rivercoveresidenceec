@@ -1,14 +1,14 @@
 (function() {
     'use strict';
-    var myduitApp = angular.module('myduitApp', ['ui.router', 'rzModule']);
+    var rcrApp = angular.module('rcrApp', ['ui.router', 'rzModule']);
 
-    myduitApp
-        .config(myduitConfig)
-        .controller('myduitCtrl', myduitCtrl);
+    rcrApp
+        .config(rcrConfig)
+        .controller('rcrCtrl', rcrCtrl);
 
-    myduitConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+    rcrConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 
-    function myduitConfig($stateProvider, $urlRouterProvider) {
+    function rcrConfig($stateProvider, $urlRouterProvider) {
         var lang = getCookie('tp-lang') || 'en';
 
         $urlRouterProvider.otherwise('/home');
@@ -16,38 +16,30 @@
         $stateProvider.state('home', {
             url: '/home',
             templateUrl: 'pages/home/home-' + lang + '.html'
-        })
-        .state('loantypes', {
-            url: '/loantypes',
-            templateUrl: 'pages/loantypes/loantypes-' + lang + '.html'     
-        })
-        .state('apply', {
-            url: '/apply',
-            templateUrl: 'pages/apply/apply-' + lang + '.html'     
         });
 
     }
 
-    myduitCtrl.$inject = ['$scope'];
-    function myduitCtrl($scope) {
-        var myduit = this;
+    rcrCtrl.$inject = ['$scope'];
+    function rcrCtrl($scope) {
+        var rcr = this;
         
-        myduit.init           = init;
-        myduit.openModal      = openModal;
-        myduit.toggleLanguage = toggleLanguage;
-        myduit.currentLanguage = getCookie('tp-lang') || 'en';
+        rcr.init           = init;
+        rcr.openModal      = openModal;
+        rcr.toggleLanguage = toggleLanguage;
+        rcr.currentLanguage = getCookie('tp-lang') || 'en';
 
-        // myduit.data      = {
+        // rcr.data      = {
         //     en: {},
         //     bm: {}
         // }
         // loadJSON('assets/fixture-en.json', function(response) {
-        //     myduit.data.en = JSON.parse(response);
+        //     rcr.data.en = JSON.parse(response);
         // });
         // loadJSON('assets/fixture-bm.json', function(response) {
-        //     myduit.data.bm = JSON.parse(response);
+        //     rcr.data.bm = JSON.parse(response);
         // });
-        // myduit.lang      = myduit.lang || 'en';
+        // rcr.lang      = rcr.lang || 'en';
 
         $scope.slider = {
             value: 500,
