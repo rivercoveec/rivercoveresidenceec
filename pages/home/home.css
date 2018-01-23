@@ -1,7 +1,69 @@
-.page-home section.info {
-    background-color: RGBA(0, 0, 0 , 0.3);
-    height: 100vh;
+.page-home section {
     position: relative;
     left: 0;
     right: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    background-size: cover;
+    background-position: center;
+	background-attachment: fixed;
+}
+.page-home section .overlay {
+    height: 100%;
+    width: 100%;
+}
+.page-home section .container {
+    height: 100vh;
+    display: table;
+}
+.page-home section .container .float-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+.page-home section.splash {
+    background-image: url("../../images/splash-bg.jpg");
+}
+.page-home section.splash .overlay {
+    background-color: RGBA(0, 0, 0 , 0.5);
+}
+.page-home section.splash .container .float-content {
+    text-align: center;
+}
+.page-home section.splash .container .title {
+    color: white;
+    font-weight: 300;
+}
+
+
+
+.page-home section.info {
+    color: white;
+    height: 100vh;
+    background-image: url("../../images/info-bg.jpg");
+}
+
+
+
+.page-home section.amenties {
+    background-image: url("../../images/amenties-bg.jpg");
+}
+.page-home section.amenties .overlay {
+    color: white;
+    background-color: RGBA(0, 0, 0 , 0.8);
+}
+
+
+
+.page-home section.contact {
+    background-image: url("../../images/contact-bg.jpg");
+}
+.page-home section.contact .overlay {
+    color: black;
+    background-color: RGBA(255, 255, 255 , 0.8);
+}
+
+.page-home section.contact iframe {
+    max-width: 100%;
 }

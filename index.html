@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="lib/fonts-googleapis-comfortaa-700.css" type="text/css">
     </head>
     <body ng-app="rcrApp" ng-controller="rcrCtrl as rcr" ng-init="rcr.openModal('page-init-modal');">
+        <img src="./images/logo.bmp" alt="" class="logo">
         <button id="responsive-menu-button"
                 class="responsive-menu-button responsive-menu-accessible responsive-menu-boring" 
                 type="button" aria-label="Menu"
@@ -44,7 +45,7 @@
             </div>
         </div>
         <div class="site-content">
-            <section class="_main-ui-view _content p-t-3" ui-view></section>
+            <section class="_main-ui-view _content" ui-view></section>
         </div>
 
         <div class="scroll-to-top" style="display: block;"><i class="fa fa-angle-up"></i></div>

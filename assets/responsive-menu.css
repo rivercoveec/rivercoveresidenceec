@@ -202,8 +202,8 @@ button#responsive-menu-button, #responsive-menu-container {
       height: 44px;
       background: #000;
       position: fixed;
-      top: 72px;
-      right: 5%; }
+      top: 3%;
+      right: 3%; }
       button#responsive-menu-button:hover {
         background: #000; }
       button#responsive-menu-button .responsive-menu-box {
