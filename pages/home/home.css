@@ -22,16 +22,16 @@
 
 
 
-.page-home section.splash {
-    background-image: url("../../images/splash-bg.jpg");
+.page-home section.home {
+    background-image: url("../../images/home-bg.jpg");
 }
-.page-home section.splash .overlay {
+.page-home section.home .overlay {
     background-color: RGBA(0, 0, 0 , 0.5);
 }
-.page-home section.splash .container .float-content {
+.page-home section.home .container .float-content {
     text-align: center;
 }
-.page-home section.splash .container .title {
+.page-home section.home .container .title {
     color: white;
     font-weight: 300;
 }
@@ -56,14 +56,17 @@
 
 
 
-.page-home section.contact {
-    background-image: url("../../images/contact-bg.jpg");
+.page-home section.register {
+    background-image: url("../../images/register-bg.jpg");
 }
-.page-home section.contact .overlay {
+.page-home section.register .overlay {
     color: black;
+    background-color: RGBA(255, 255, 255 , 0.5);
+}
+.page-home section.register .title {
+    border-radius: 15px;
     background-color: RGBA(255, 255, 255 , 0.8);
 }
-
-.page-home section.contact iframe {
+.page-home section.register iframe {
     max-width: 100%;
 }

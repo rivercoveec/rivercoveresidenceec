@@ -1,10 +1,11 @@
 function initializeSmoothScroll(offsetValue) {
     // Select all links with @@
-    $('a[href*="@@"]')
+    $('a[href*="#"]')
     .click(function(event) {
-        var value = this.pathname.replace(/^\//, '');
-        if (value[0] == '@' && value[1] == '@') {
-            var target = $('#' + value.replace('@@', ''));
+        // var value = this.pathname.replace(/^\//, '');
+        var value = this.hash;
+        if (value[0] == '#') {
+            var target = $('#' + value.replace('#', ''));
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
                 // Only prevent default if animation is actually gonna happen

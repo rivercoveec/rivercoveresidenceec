@@ -3,22 +3,22 @@
     var rcrApp = angular.module('rcrApp', ['ui.router', 'rzModule']);
 
     rcrApp
-        .config(rcrConfig)
+        // .config(rcrConfig)
         .controller('rcrCtrl', rcrCtrl);
 
-    rcrConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+    // rcrConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 
-    function rcrConfig($stateProvider, $urlRouterProvider) {
-        var lang = getCookie('tp-lang') || 'en';
+    // function rcrConfig($stateProvider, $urlRouterProvider) {
+    //     var lang = getCookie('tp-lang') || 'en';
 
-        $urlRouterProvider.otherwise('/home');
+    //     $urlRouterProvider.otherwise('/home');
 
-        $stateProvider.state('home', {
-            url: '/home',
-            templateUrl: 'pages/home/home-' + lang + '.html'
-        });
+    //     $stateProvider.state('home', {
+    //         url: '/home',
+    //         templateUrl: 'pages/home/home-' + lang + '.html'
+    //     });
 
-    }
+    // }
 
     rcrCtrl.$inject = ['$scope'];
     function rcrCtrl($scope) {

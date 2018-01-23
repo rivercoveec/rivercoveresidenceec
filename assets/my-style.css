@@ -19,3 +19,91 @@ img.logo {
     z-index: 100;
     opacity: 0.4;
 }
+
+.responsive-menu-item-link:hover {
+    color: #f78f27 !important;
+    background-color: transparent !important;
+    border-top: 2px solid #f26222 !important;
+    border-bottom: 2px solid #f26222 !important;
+}
+
+
+
+
+
+
+
+
+
+.rcr section {
+    position: relative;
+    left: 0;
+    right: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    background-size: cover;
+    background-position: center;
+	background-attachment: fixed;
+}
+.rcr section .overlay {
+    height: 100%;
+    width: 100%;
+}
+.rcr section .container {
+    height: 100vh;
+    display: table;
+}
+.rcr section .container .float-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+.rcr section.home {
+    background-image: url("../images/home-bg.jpg");
+}
+.rcr section.home .overlay {
+    background-color: RGBA(0, 0, 0 , 0.5);
+}
+.rcr section.home .container .float-content {
+    text-align: center;
+}
+.rcr section.home .container .title {
+    color: white;
+    font-weight: 300;
+}
+
+
+
+.rcr section.details {
+    color: white;
+    height: 100vh;
+    background-image: url("../images/details-bg.jpg");
+}
+
+
+
+.rcr section.amenties {
+    background-image: url("../images/amenties-bg.jpg");
+}
+.rcr section.amenties .overlay {
+    color: white;
+    background-color: RGBA(0, 0, 0 , 0.8);
+}
+
+
+
+.rcr section.register {
+    background-image: url("../images/register-bg.jpg");
+}
+.rcr section.register .overlay {
+    color: black;
+    background-color: RGBA(255, 255, 255 , 0.5);
+}
+.rcr section.register .title {
+    border-radius: 15px;
+    background-color: RGBA(255, 255, 255 , 0.8);
+}
+.rcr section.register iframe {
+    max-width: 100%;
+}
