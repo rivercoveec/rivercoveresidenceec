@@ -51,6 +51,26 @@ img.logo {
 }
 
 
+@-webkit-keyframes slideRight {
+    0%   { background-position: left; }
+    50% { background-position: right; }
+    100% { background-position: left; }
+}
+@-moz-keyframes slideRight {
+    0%   { background-position: left; }
+    50% { background-position: right; }
+    100% { background-position: left; }
+}
+@-o-keyframes slideRight {
+    0%   { background-position: left; }
+    50% { background-position: right; }
+    100% { background-position: left; }
+}
+@keyframes slideRight {
+    0%   { background-position: left; }
+    50% { background-position: right; }
+    100% { background-position: left; }
+}
 
 .rcr section.home .bg-overlay {
     z-index: -10;
@@ -58,13 +78,17 @@ img.logo {
     width: 100%;
     position: fixed;
     background-size: cover;
-    background-position: center;
 	background-attachment: fixed;
     background-image: url("../images/home-bg.jpg");
-    transition:all 0.5s ease;
-    -webkit-transition:all 0.5s ease;
-    -o-transition:all 0.5s ease;
-    -moz-transition:all 0.5s ease;
+    transition:all 1.5s ease;
+    -webkit-transition:all 1.5s ease;
+    -o-transition:all 1.5s ease;
+    -moz-transition:all 1.5s ease;
+    -webkit-animation: slideRight 100s infinite; /* Safari 4+ */
+    -moz-animation:    slideRight 100s infinite; /* Fx 5+ */
+    -o-animation:      slideRight 100s infinite; /* Opera 12+ */
+    animation:         slideRight 100s infinite; /* IE 10+, Fx 29+ */
+
 }
 .rcr section.home .overlay {
     background-color: RGBA(0, 0, 0 , 0.5);
