@@ -10,7 +10,7 @@
         <link  href="assets/extra.css" rel="stylesheet">
         <link  href="assets/my-style.css" rel="stylesheet">
         <link  href="assets/responsive-menu.css" rel="stylesheet">
-        
+
         <link  href="pages/home/home.css" rel="stylesheet">
 
         <meta charset="UTF-8">
@@ -26,7 +26,7 @@
     <body class="rcr" ng-app="rcrApp" ng-controller="rcrCtrl as rcr" ng-init="rcr.openModal('page-init-modal'); rcr.init();">
         <img src="./images/logo.bmp" alt="" class="logo">
         <button id="responsive-menu-button"
-                class="responsive-menu-button responsive-menu-accessible responsive-menu-boring" 
+                class="responsive-menu-button responsive-menu-accessible responsive-menu-boring"
                 type="button" aria-label="Menu"
                 ng-click="rcr.showMenu = !rcr.showMenu"
                 ng-class="{ 'is-active': rcr.showMenu }">
@@ -61,6 +61,7 @@
         </div>
         <div class="site-content">
             <section class="home" id="home">
+                <div class="bg-overlay"></div>
                 <div class="overlay">
                     <div class="container">
                         <div class="float-content">
@@ -78,7 +79,7 @@
                     </div>
                 </div>
             </section>
-            
+
             <section class="details" id="details">
                 <div class="overlay">
                     <div class="container">
@@ -91,7 +92,7 @@
                     </div>
                 </div>
             </section>
-        
+
             <section class="amenties" id="amenties">
                 <div class="overlay">
                     <div class="container">
@@ -104,14 +105,14 @@
                                     <li>Tongkang LRT Station</li>
                                     <li>Sengkang MRT Station</li>
                                 </ul>
-                
+
                                 <h5>Shopping Mall Nearby Rivercove Residences EC</h5>
                                 <ul>
                                     <li>The Seletar Mall</li>
                                     <li>Compass One</li>
                                     <li>Fernvale Point</li>
                                 </ul>
-                
+
                                 <h5>Schools Nearby Rivercove ResidencesEC</h5>
                                 <ul>
                                     <li>Nan Chiau Primary School</li>
@@ -123,7 +124,7 @@
                     </div>
                 </div>
             </section>
-        
+
             <section class="register" id="register">
                 <div class="overlay">
                     <div class="container">
@@ -134,10 +135,10 @@
                             </div>
                             <div class="p-t-1 p-b-2">
                                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeV9gqv8LfoOcxnaeGJ2lqVkzHUFmYF5CijLWhTV4gGryrscA/viewform?embedded=true"
-                                    width="500" 
-                                    height="1230" 
-                                    frameborder="0" 
-                                    marginheight="0" 
+                                    width="500"
+                                    height="1230"
+                                    frameborder="0"
+                                    marginheight="0"
                                     marginwidth="0">
                                     Loading...
                                 </iframe>
