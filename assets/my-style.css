@@ -79,11 +79,11 @@ img.logo {
     position: fixed;
     background-size: cover;
 	background-attachment: fixed;
-    background-image: url("../images/home-bg.jpg");
-    -webkit-animation: slideRight 100s infinite linear; /* Safari 4+ */
-    -moz-animation:    slideRight 100s infinite linear; /* Fx 5+ */
-    -o-animation:      slideRight 100s infinite linear; /* Opera 12+ */
-    animation:         slideRight 100s infinite linear; /* IE 10+, Fx 29+ */
+    background-image: url("../images/home-bg-2.jpg");
+    -webkit-animation: slideRight 40s infinite linear; /* Safari 4+ */
+    -moz-animation:    slideRight 40s infinite linear; /* Fx 5+ */
+    -o-animation:      slideRight 40s infinite linear; /* Opera 12+ */
+    animation:         slideRight 40s infinite linear; /* IE 10+, Fx 29+ */
 
 }
 .rcr section.home .overlay {
@@ -91,6 +91,15 @@ img.logo {
 }
 .rcr section.home .container .float-content {
     text-align: center;
+}
+.rcr section.home .container .float-content .register-interest {
+    background-color: RGBA(50, 100, 150, 0.5);
+    color: white;
+    font-weight: 300;
+    font-size: 150%;
+    padding: 0.5rem 1rem;
+    border-radius: 26px;
+    box-shadow: 0px 0px 10px 3px white;
 }
 .rcr section.home .container .title {
     color: white;
@@ -121,6 +130,11 @@ img.logo {
     background-image: url("../images/details-bg.jpg");
 }
 
+
+.rcr .screen-image-1 {
+    background-color: black;
+    padding: 0 10%;
+}
 
 
 .rcr section.amenties {
