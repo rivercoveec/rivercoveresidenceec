@@ -52,24 +52,36 @@ img.logo {
 
 
 @-webkit-keyframes slideRight {
-    0%   { background-position: left; }
-    50% { background-position: right; }
-    100% { background-position: left; }
+    0%   { background-position: center; }
+    5%   { background-position: center; }
+    25%  { background-position: right; }
+    30%  { background-position: right; }
+    75%  { background-position: left; }
+    100% { background-position: center; }
 }
 @-moz-keyframes slideRight {
-    0%   { background-position: left; }
-    50% { background-position: right; }
-    100% { background-position: left; }
+    0%   { background-position: center; }
+    5%   { background-position: center; }
+    25%  { background-position: right; }
+    30%  { background-position: right; }
+    75%  { background-position: left; }
+    100% { background-position: center; }
 }
 @-o-keyframes slideRight {
-    0%   { background-position: left; }
-    50% { background-position: right; }
-    100% { background-position: left; }
+    0%   { background-position: center; }
+    5%   { background-position: center; }
+    25%  { background-position: right; }
+    30%  { background-position: right; }
+    75%  { background-position: left; }
+    100% { background-position: center; }
 }
 @keyframes slideRight {
-    0%   { background-position: left; }
-    50% { background-position: right; }
-    100% { background-position: left; }
+    0%   { background-position: center; }
+    5%   { background-position: center; }
+    25%  { background-position: right; }
+    30%  { background-position: right; }
+    75%  { background-position: left; }
+    100% { background-position: center; }
 }
 
 .rcr section.home .bg-overlay {
@@ -78,12 +90,13 @@ img.logo {
     width: 100%;
     position: fixed;
     background-size: cover;
-	background-attachment: fixed;
+    background-attachment: fixed;
+    background-position: center;
     background-image: url("../images/home-bg-2.jpg");
-    -webkit-animation: slideRight 40s infinite linear; /* Safari 4+ */
-    -moz-animation:    slideRight 40s infinite linear; /* Fx 5+ */
-    -o-animation:      slideRight 40s infinite linear; /* Opera 12+ */
-    animation:         slideRight 40s infinite linear; /* IE 10+, Fx 29+ */
+    /* -webkit-animation: slideRight 50s infinite;
+    -moz-animation:    slideRight 50s infinite;
+    -o-animation:      slideRight 50s infinite;
+    animation:         slideRight 50s infinite; */
 
 }
 .rcr section.home .overlay {
@@ -93,13 +106,13 @@ img.logo {
     text-align: center;
 }
 .rcr section.home .container .float-content .register-interest {
-    background-color: RGBA(50, 100, 150, 0.5);
-    color: white;
-    font-weight: 300;
+    /* background-color: RGBA(50, 100, 150, 0.5); */
+    /* color: white; */
+    /* font-weight: 300; */
     font-size: 150%;
-    padding: 0.5rem 1rem;
-    border-radius: 26px;
-    box-shadow: 0px 0px 10px 3px white;
+    padding: 0.35rem 0.8rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 0px white;
 }
 .rcr section.home .container .title {
     color: white;
@@ -136,6 +149,30 @@ img.logo {
     padding: 0 10%;
 }
 
+
+.rcr section.reason,
+.rcr section.reason .container {
+    height: auto;
+}
+.rcr section.reason .bg-overlay {
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: top;
+    background-image: url("../images/while-stock-last.jpg");
+    /* -webkit-animation: slideRight 50s infinite;
+    -moz-animation:    slideRight 50s infinite;
+    -o-animation:      slideRight 50s infinite;
+    animation:         slideRight 50s infinite; */
+
+}
+.rcr section.reason .overlay {
+    background-color: RGBA(255, 255, 255 , 0.9);
+    /* color: white; */
+}
 
 .rcr section.amenties {
     background-image: url("../images/amenties-bg.jpg");
