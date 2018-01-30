@@ -10,15 +10,53 @@ body {
     font-family: Comfortaa;
 }
 
+.page-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    height: 60px;
+    background-color: RGBA(255, 255, 255, 0.8);
+}
+.page-header .header-content {
+    display: inline-block;
+}
+.page-header .header-content ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    font-weight: 700;
+}
+.page-header .header-content .top-menu-item-link {
+    padding: 0.35rem 0.5rem;;
+    text-decoration: none;
+    border-color: transparent;
+    transition: border-color 0.5s, color 0.2s;
+}
+.page-header .header-content .top-menu-item-link:hover {
+    font-weight: 700;
+    color: black !important;
+    /* color: #f78f27 !important; */
+    background-color: transparent !important;
+    border-top: 2px solid #f26222 !important;
+    border-bottom: 2px solid #f26222 !important;
+}
+
 img.logo {
     width: 200px;
-    position: fixed;
+    height: 100%;
+    padding: 0.5rem;
+    /* position: fixed;
     top: 5px;
     left: 5px;
-    z-index: 100;
+    z-index: 100; */
     opacity: 0.4;
 }
 
+#responsive-menu-button {
+    right: 0.5rem !important;
+    top: 0.5rem !important;
+}
 .responsive-menu-item-link:hover {
     color: #f78f27 !important;
     background-color: transparent !important;
@@ -84,7 +122,11 @@ img.logo {
     100% { background-position: center; }
 }
 
+.rcr section.home {
+    background-image: url("../images/home-bg-2.jpg");
+}
 .rcr section.home .bg-overlay {
+    display: none;
     z-index: -10;
     height: 100%;
     width: 100%;
@@ -100,7 +142,7 @@ img.logo {
 
 }
 .rcr section.home .overlay {
-    background-color: RGBA(0, 0, 0 , 0.5);
+    /* background-color: RGBA(0, 0, 0 , 0.5); */
 }
 .rcr section.home .container .float-content {
     text-align: center;
@@ -115,8 +157,18 @@ img.logo {
     box-shadow: 0px 0px 1px 0px white;
 }
 .rcr section.home .container .title {
-    color: white;
     font-weight: 300;
+    position: relative;
+}
+.rcr section.home .container .title .launching-tag {
+    position: absolute;
+    top: -6rem;
+    left: -4rem;
+}
+.rcr section.home .container .title .head {
+    background-color: RGBA(245, 245, 255, 0.7);
+    border-radius: 15px;
+    padding: 2rem 1rem;
 }
 
 
@@ -160,9 +212,11 @@ img.logo {
     width: 100%;
     position: absolute;
     background-size: contain;
-    background-attachment: fixed;
-    background-position: top;
-    background-image: url("../images/while-stock-last.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    /* background-image: url("../images/while-stock-last.jpg"); */
+    background-color: white;
     /* -webkit-animation: slideRight 50s infinite;
     -moz-animation:    slideRight 50s infinite;
     -o-animation:      slideRight 50s infinite;
@@ -197,4 +251,18 @@ img.logo {
 }
 .rcr section.register iframe {
     max-width: 100%;
+}
+
+
+
+
+/* # utilities */
+.font-type-1 {
+    font-family: 'Libre Baskerville', serif !important;
+}
+.font-type-2 {
+    font-family: 'Alegreya SC', serif !important;
+}
+.font-type-3 {
+    font-family: 'Caudex' !important;
 }

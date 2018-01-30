@@ -11,8 +11,6 @@
         <link  href="assets/my-style.css" rel="stylesheet">
         <link  href="assets/responsive-menu.css" rel="stylesheet">
 
-        <link  href="pages/home/home.css" rel="stylesheet">
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,17 +20,48 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Comfortaa%3A700" type="text/css">-->
         <link rel="stylesheet" href="lib/fonts-googleapis-comfortaa-400-700-v4-7-3.css" type="text/css">
         <link rel="stylesheet" href="lib/fonts-googleapis-comfortaa-700.css" type="text/css">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Caudex' rel='stylesheet'>
     </head>
     <body class="rcr" ng-app="rcrApp" ng-controller="rcrCtrl as rcr" ng-init="rcr.openModal('page-init-modal'); rcr.init();">
-        <img src="./images/logo.bmp" alt="" class="logo">
+        <div class="page-header">
+            <img src="./images/logo.bmp" alt="" class="logo">
+            <div class="header-content hidden-sm-down">
+                <ul class="list-unstyled">
+                    <li id="top-menu-item-home" class="top-menu-item">
+                        <a href="#home" class="top-menu-item-link">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li id="top-menu-item-details" class="top-menu-item">
+                        <a href="#details" class="top-menu-item-link">
+                            <span>Details</span>
+                        </a>
+                    </li>
+                    <li id="top-menu-item-amenties" class="top-menu-item">
+                        <a href="#amenties" class="top-menu-item-link">
+                            <span>Amenties</span>
+                        </a>
+                    </li>
+                    <li id="top-menu-item-register" class="top-menu-item">
+                        <a href="#register" class="top-menu-item-link">
+                            <span>Register</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <button id="responsive-menu-button"
-                class="responsive-menu-button responsive-menu-accessible responsive-menu-boring"
+                class="responsive-menu-button responsive-menu-accessible responsive-menu-boring hidden-md-up"
                 type="button" aria-label="Menu"
                 ng-click="rcr.showMenu = !rcr.showMenu"
                 ng-class="{ 'is-active': rcr.showMenu }">
             <span class="responsive-menu-box"><span class="responsive-menu-inner"></span></span>
         </button>
-        <div id="responsive-menu-container" class="slide-left"
+        <div id="responsive-menu-container" class="slide-left hidden-md-up"
              ng-class="{ 'slide-left': !rcr.showMenu }">
             <div id="responsive-menu-wrapper" class="p-a-3">
                 <ul id="responsive-menu" class="">
@@ -41,17 +70,17 @@
                             <span>Home</span>
                         </a>
                     </li>
-                    <li id="responsive-menu-item-home" ng-click="rcr.showMenu = !rcr.showMenu" class="responsive-menu-item">
+                    <li id="responsive-menu-item-details" ng-click="rcr.showMenu = !rcr.showMenu" class="responsive-menu-item">
                         <a href="#details" class="responsive-menu-item-link">
                             <span>Details</span>
                         </a>
                     </li>
-                    <li id="responsive-menu-item-home" ng-click="rcr.showMenu = !rcr.showMenu" class="responsive-menu-item">
+                    <li id="responsive-menu-item-amenties" ng-click="rcr.showMenu = !rcr.showMenu" class="responsive-menu-item">
                         <a href="#amenties" class="responsive-menu-item-link">
                             <span>Amenties</span>
                         </a>
                     </li>
-                    <li id="responsive-menu-item-home" ng-click="rcr.showMenu = !rcr.showMenu" class="responsive-menu-item">
+                    <li id="responsive-menu-item-register" ng-click="rcr.showMenu = !rcr.showMenu" class="responsive-menu-item">
                         <a href="#register" class="responsive-menu-item-link">
                             <span>Register</span>
                         </a>
@@ -65,14 +94,19 @@
                 <div class="overlay">
                     <div class="container">
                         <div class="float-content">
-                            <h2 class="title p-t-3 m-t-3">
-                                <div>
-                                    <strong>Welcome to Rivercove Residences</strong>
+                            <div class="title p-a-3 m-t-1">
+                                <div class="launching-tag">
+                                    <img src="images/launch-tag.png" alt="">
                                 </div>
-                                <div>
-                                    <span>Executive Condominium at Anchorvale Lane</span>
+                                <div class="head font-type-3">
+                                    <h2>
+                                        <strong>Welcome to Rivercove Residences</strong>
+                                    </h2>
+                                    <h3>
+                                        <span>Executive Condominium at Anchorvale Lane</span>
+                                    </h3>
                                 </div>
-                                <div class="m-t-3 m-b-1" style="font-size: 19px; font-weight: 100;">
+                                <div class="m-t-1 m-b-1 font-type-1" style="font-size: 19px; color: white;">
                                     A Premium Development by
                                 </div>
                                 <div>
@@ -81,10 +115,10 @@
                                 <div>
                                     <img width="150px" src="images/company_logo2.png" alt="">
                                 </div>
-                            </h2>
+                            </div>
                             <a href="#register">
-                                <button class="register-interest btn btn-secondary btn-lg m-t-2">
-                                    Register Interest
+                                <button class="register-interest btn btn-secondary btn-lg font-type-3">
+                                    Register your interest
                                 </button>
                             </a>
                         </div>
@@ -102,52 +136,62 @@
                             </div>
 
                             <div class="text-xs-center">
-                                <img src="images/image-sunrise.jpg" width="70%" alt="">
+                                <img src="images/image-sunrise.jpg" class="hidden-sm-down" width="70%" alt="">
+                                <img src="images/image-sunrise.jpg" class="hidden-md-up" width="100%" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="reason" id="reason">
+            <section class="reason font-type-3" id="reason">
                 <div class="bg-overlay"></div>
                 <div class="overlay">
                     <div class="container">
                         <div class="float-content p-y-3">
                             <h2>5 Key Reasons Why You Should Consider RIVERCOVE RESIDENCE EC</h2>
-                            <div class="row">
-                                <div class="p-t-1">
-                                    <h5>
-                                        1) The ONLY EC project launching in 2018!
-                                    </h5>
-                                    <div class="hidden-xs-up">
-                                        <img src="images/reason1.jpg" alt="" width="400px;">
+                            <div class="p-t-1">
+                                <ol class="hidden-md-up">
+                                    <li>The ONLY EC project launching in 2018!</li>
+                                    <li>If you miss it, you will need to wait until second half of the year 2019!</li>
+                                    <li>Property prices are predicted to inched even higher within 2018.</li>
+                                    <li>Many HBD flats in Punggol, Hougang and Sengkang, going to meet MOP in the coming months.</li>
+                                    <li>The previous EC project, Hundred Palms Residence, launch last year, were snap up in 7 hours.</li>
+                                </ol>
+                                <div class="hidden-sm-down">
+                                    <div class="">
+                                        <h5>
+                                            1) The ONLY EC project launching in 2018!
+                                        </h5>
+                                        <div class="hidden-xs-up">
+                                            <img src="images/reason1.jpg" alt="" width="400px;">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class=" p-t-1">
-                                    <h5>
-                                        2) If you miss it, you will need to wait until second half of the year 2019!
-                                    </h5>
-                                </div>
-                                <div class="p-t-1">
-                                    <h5>
-                                        3) Property prices are predicted to inched even higher within 2018.
-                                    </h5>
-                                    <div class="hidden-xs-up">
-                                        <img src="images/reason3.jpg" alt="" width="400px;">
+                                    <div class="">
+                                        <h5>
+                                            2) If you miss it, you will need to wait until second half of the year 2019!
+                                        </h5>
                                     </div>
-                                </div>
-                                <div class="p-t-1">
-                                    <h5>
-                                        4) Many of the HBD flats in Punggol, Hougang and Sengkang, going to meet MOP in the coming months.
-                                    </h5>
-                                </div>
-                                <div class="p-t-1">
-                                    <h5>
-                                        5) The previous EC project, Hundred Palms Residence, launch last year, were snap up in 7 hours.
-                                    </h5>
-                                    <div class="hidden-xs-up">
-                                        <img src="images/reason5.jpg" alt="" width="400px;">
+                                    <div class="">
+                                        <h5>
+                                            3) Property prices are predicted to inched even higher within 2018.
+                                        </h5>
+                                        <div class="hidden-xs-up">
+                                            <img src="images/reason3.jpg" alt="" width="400px;">
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <h5>
+                                            4) Many HBD flats in Punggol, Hougang and Sengkang, going to meet MOP in the coming months.
+                                        </h5>
+                                    </div>
+                                    <div class="">
+                                        <h5>
+                                            5) The previous EC project, Hundred Palms Residence, launch last year, were snap up in 7 hours.
+                                        </h5>
+                                        <div class="hidden-xs-up">
+                                            <img src="images/reason5.jpg" alt="" width="400px;">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -192,7 +236,7 @@
                 <div class="overlay">
                     <div class="container">
                         <div class="float-content p-y-3 text-xs-center">
-                            <div class="title p-t-1 m-b-1">
+                            <div class="title p-t-1 m-b-1 p-x-1 font-type-2">
                                 <h4>Register & receive the complete Rivercove Residences Brochure</h4>
                                 <p>The brochure includes floor plans, site plans and more</p>
                             </div>
