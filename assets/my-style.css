@@ -159,16 +159,54 @@ img.logo {
 .rcr section.home .container .title {
     font-weight: 300;
     position: relative;
+    padding: 3rem;
+}
+@media (max-width: 767px) {
+    .rcr section.home .container .title {
+        padding: 3rem 0;
+    }
 }
 .rcr section.home .container .title .launching-tag {
     position: absolute;
-    top: -6rem;
-    left: -4rem;
+    bottom: -10rem;
+    right: -14rem;
+    width: 300px;
 }
+.rcr section.home .container .title .launching-tag img {
+    width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .rcr section.home .container .title .launching-tag {
+        bottom: -8rem;
+        right: -8rem;
+    }
+}
+@media (max-width:767px) {
+    .rcr section.home .container .title .launching-tag {
+        position: absolute;
+        top: -53%;
+        right: -12%;
+        left: auto;
+        bottom: auto;
+        width: 45%;
+    }
+}
+
+
 .rcr section.home .container .title .head {
+    position: relative;
     background-color: RGBA(245, 245, 255, 0.7);
     border-radius: 15px;
     padding: 2rem 1rem;
+}
+@media (max-width: 767px) {
+    .rcr h2 {
+        font-size: 1.85rem;
+    }
+    .rcr h3 {
+        font-size: 1.3rem;
+    }
 }
 
 
