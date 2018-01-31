@@ -198,14 +198,16 @@ button#responsive-menu-button, #responsive-menu-container {
           bottom: 0;
           transform: rotate(-90deg); }
     button#responsive-menu-button {
-      width: 44px;
-      height: 44px;
-      background: #000;
+      width: 30px;
+      height: 30px;
+      background: RGBA(0, 0, 0, 0);
+      border: 2px solid black;
       position: fixed;
       top: 3%;
       right: 3%; }
       button#responsive-menu-button:hover {
-        background: #000; }
+        background: teal;
+      }
       button#responsive-menu-button .responsive-menu-box {
         color: #fff; }
     .responsive-menu-label {

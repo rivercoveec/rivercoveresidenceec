@@ -27,8 +27,8 @@
         <link href='https://fonts.googleapis.com/css?family=Caudex' rel='stylesheet'>
     </head>
     <body class="rcr" ng-app="rcrApp" ng-controller="rcrCtrl as rcr" ng-init="rcr.openModal('page-init-modal'); rcr.init();">
-        <div class="page-header">
-            <img src="./images/logo.bmp" alt="" class="logo">
+        <div class="page-header text-xs-center">
+            <img src="./images/logo.png" alt="" class="logo">
             <div class="header-content hidden-sm-down">
                 <ul class="list-unstyled">
                     <li id="top-menu-item-home" class="top-menu-item">
@@ -59,7 +59,7 @@
                 type="button" aria-label="Menu"
                 ng-click="rcr.showMenu = !rcr.showMenu"
                 ng-class="{ 'is-active': rcr.showMenu }">
-            <span class="responsive-menu-box"><span class="responsive-menu-inner"></span></span>
+            <span class="fa fa-bars"></span>
         </button>
         <div id="responsive-menu-container" class="slide-left hidden-md-up"
              ng-class="{ 'slide-left': !rcr.showMenu }">
@@ -88,7 +88,7 @@
                 </ul>
             </div>
         </div>
-        <div class="site-content">
+        <div class="site-content" ng-click="rcr.showMenu = false;">
             <section class="home" id="home">
                 <div class="bg-overlay"></div>
                 <div class="overlay">

@@ -11,12 +11,12 @@ body {
 }
 
 .page-header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10000;
-    height: 60px;
+    height: 35px;
     background-color: RGBA(255, 255, 255, 0.8);
 }
 .page-header .header-content {
@@ -43,19 +43,21 @@ body {
 }
 
 img.logo {
-    width: 200px;
     height: 100%;
-    padding: 0.5rem;
-    /* position: fixed;
-    top: 5px;
-    left: 5px;
-    z-index: 100; */
-    opacity: 0.4;
 }
 
 #responsive-menu-button {
-    right: 0.5rem !important;
-    top: 0.5rem !important;
+    left: 3px !important;
+    top: 3px !important;
+}
+#responsive-menu-button.is-active {
+    border-color: white !important;
+}
+#responsive-menu-button .fa-bars {
+    color: black;
+}
+#responsive-menu-button.is-active .fa-bars {
+    color: white;
 }
 .responsive-menu-item-link:hover {
     color: #f78f27 !important;
@@ -168,28 +170,23 @@ img.logo {
 }
 .rcr section.home .container .title .launching-tag {
     position: absolute;
-    bottom: -10rem;
-    right: -14rem;
+    top: 13rem;
+    left: 37rem;
     width: 300px;
 }
 .rcr section.home .container .title .launching-tag img {
     width: 100%;
 }
 
-@media (min-width: 768px) and (max-width: 1100px) {
-    .rcr section.home .container .title .launching-tag {
-        bottom: -8rem;
-        right: -8rem;
-    }
-}
-@media (max-width:767px) {
+@media (max-width: 1100px) {
     .rcr section.home .container .title .launching-tag {
         position: absolute;
-        top: -53%;
-        right: -12%;
-        left: auto;
-        bottom: auto;
+        top: auto;
+        right: auto;
+        left: 64%;
+        bottom: 80%;
         width: 45%;
+        max-width: 180px;
     }
 }
 
