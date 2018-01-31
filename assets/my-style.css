@@ -186,6 +186,11 @@ img.logo {
 	background-attachment: fixed;
     background-image: url("../images/background1.jpg");
 }
+@media (max-width: 1100px) {
+    .rcr section.details::after {
+        background-attachment: scroll;
+    }
+}
 
 
 .rcr .screen-image-1 {
@@ -207,7 +212,11 @@ img.logo {
     background-position: center;
 	background-attachment: fixed;
     background-image: url("../images/background5.jpg");
-
+}
+@media (max-width: 1100px) {
+    .rcr section.reason .bg-overlay {
+        background-attachment: scroll;
+    }
 }
 .rcr section.reason .overlay {
     background-color: RGBA(255, 255, 255 , 0.6);
@@ -239,6 +248,11 @@ img.logo {
 
 .rcr section.register {
     background-image: url("../images/register-bg.jpg");
+}
+@media (max-width: 1100px) {
+    .rcr section.register {
+        background-attachment: scroll;
+    }
 }
 .rcr section.register .overlay {
     color: black;
