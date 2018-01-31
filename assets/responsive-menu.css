@@ -206,7 +206,7 @@ button#responsive-menu-button, #responsive-menu-container {
       top: 3%;
       right: 3%; }
       button#responsive-menu-button:hover {
-        background: teal;
+        background: darkslategrey;
       }
       button#responsive-menu-button .responsive-menu-box {
         color: #fff; }

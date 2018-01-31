@@ -82,7 +82,7 @@ img.logo {
     width: 100%;
 }
 .rcr section .container {
-    height: 100vh;
+    min-height: 100vh;
     display: table;
 }
 .rcr section .container .float-content {
