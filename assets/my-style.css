@@ -235,6 +235,14 @@ img.logo {
     color: white;
     background-color: RGBA(0, 0, 0 , 0.8);
 }
+.rcr section.amenties .items .item:nth-child(even) .content {
+    float: right;
+}
+
+.rcr section.amenties .items .graphic {
+    background: white;
+    padding: 1rem;
+}
 
 
 
