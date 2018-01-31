@@ -91,60 +91,14 @@ img.logo {
 }
 
 
-@-webkit-keyframes slideRight {
-    0%   { background-position: center; }
-    5%   { background-position: center; }
-    25%  { background-position: right; }
-    30%  { background-position: right; }
-    75%  { background-position: left; }
-    100% { background-position: center; }
-}
-@-moz-keyframes slideRight {
-    0%   { background-position: center; }
-    5%   { background-position: center; }
-    25%  { background-position: right; }
-    30%  { background-position: right; }
-    75%  { background-position: left; }
-    100% { background-position: center; }
-}
-@-o-keyframes slideRight {
-    0%   { background-position: center; }
-    5%   { background-position: center; }
-    25%  { background-position: right; }
-    30%  { background-position: right; }
-    75%  { background-position: left; }
-    100% { background-position: center; }
-}
-@keyframes slideRight {
-    0%   { background-position: center; }
-    5%   { background-position: center; }
-    25%  { background-position: right; }
-    30%  { background-position: right; }
-    75%  { background-position: left; }
-    100% { background-position: center; }
-}
 
 .rcr section.home {
     background-image: url("../images/home-bg-2.jpg");
 }
-.rcr section.home .bg-overlay {
-    display: none;
-    z-index: -10;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-image: url("../images/home-bg-2.jpg");
-    /* -webkit-animation: slideRight 50s infinite;
-    -moz-animation:    slideRight 50s infinite;
-    -o-animation:      slideRight 50s infinite;
-    animation:         slideRight 50s infinite; */
-
-}
-.rcr section.home .overlay {
-    /* background-color: RGBA(0, 0, 0 , 0.5); */
+@media (max-width: 1100px) {
+    .rcr section.home {
+        background-attachment: scroll;
+    }
 }
 .rcr section.home .container .float-content {
     text-align: center;
