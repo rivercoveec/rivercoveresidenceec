@@ -218,6 +218,9 @@ img.logo {
     color: white;
     position: relative;
 }
+.rcr section.details .overlay {
+    background-color: RGBA(0, 0, 0, 0.6);
+}
 .rcr section.details::after {
     content: "";
     opacity: 0.93;
@@ -230,7 +233,7 @@ img.logo {
     background-size: cover;
     background-position: center;
 	background-attachment: fixed;
-    background-image: url("../images/details-bg.jpg");
+    background-image: url("../images/background1.jpg");
 }
 
 
@@ -249,20 +252,14 @@ img.logo {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-size: cover;
     background-position: center;
-    /* background-image: url("../images/while-stock-last.jpg"); */
-    background-color: white;
-    /* -webkit-animation: slideRight 50s infinite;
-    -moz-animation:    slideRight 50s infinite;
-    -o-animation:      slideRight 50s infinite;
-    animation:         slideRight 50s infinite; */
+	background-attachment: fixed;
+    background-image: url("../images/background5.jpg");
 
 }
 .rcr section.reason .overlay {
-    background-color: RGBA(255, 255, 255 , 0.9);
+    background-color: RGBA(255, 255, 255 , 0.6);
     /* color: white; */
 }
 
@@ -273,8 +270,13 @@ img.logo {
     color: white;
     background-color: RGBA(0, 0, 0 , 0.8);
 }
-.rcr section.amenties .items .item:nth-child(even) .content {
-    float: right;
+@media (min-width: 768px) {
+    .rcr section.amenties .items .item:nth-child(even) .content {
+        float: right;
+    }
+    .rcr section.amenties .items .item .content {
+        padding-top: 1.5rem;
+    }
 }
 
 .rcr section.amenties .items .graphic {
