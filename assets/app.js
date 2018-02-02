@@ -23,7 +23,7 @@
     rcrCtrl.$inject = ['$scope'];
     function rcrCtrl($scope) {
         var rcr = this;
-        
+
         rcr.init           = init;
         rcr.openModal      = openModal;
         rcr.toggleLanguage = toggleLanguage;
@@ -53,6 +53,8 @@
         function init() {
             var offsetValue = 50;
             initializeSmoothScroll(offsetValue);
+
+            document.addEventListener('contextmenu', event => event.preventDefault());
         }
 
         function openModal(id) {
